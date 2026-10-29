@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JobPulse - চাকরির সার্কুলার ও অ্যাড মার্কেটিং প্ল্যাটফর্ম</title>
+  <meta name="description" content="দৈনিক সরকারি চাকরি, বেসরকারি কোম্পানি, ব্যাংক এবং রিমোট জব সার্কুলার। অ্যাড মার্কেটিং নেটওয়ার্কের জন্য অপ্টিমাইজড।">
+  
+  <!-- Google Fonts: Hind Siliguri -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@400;500;600;700&display=swap" rel="stylesheet">
+  
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['"Hind Siliguri"', 'system-ui', 'sans-serif'],
+          }
+        }
+      }
+    }
+  </script>
+
+  <style>
+    body { font-family: 'Hind Siliguri', sans-serif; background-color: #f8fafc; }
+  </style>
+</head>
+<body class="text-slate-800 antialiased pb-24">
+
+  <!-- ========================================================================= -->
+  <!-- 📌 AD SLOT 1: TOP STICKY NOTIFICATION BAR (লিংক ১: uplcm.com)             -->
+  <!-- ========================================================================= -->
+  <header>
+    <div class="bg-slate-900 text-slate-100 py-2 px-4 text-xs shadow-sm">
+      <div class="max-w-6xl mx-auto flex items-center justify-between">
+        <div class="flex items-center gap-2 truncate">
+          <span class="w-2 h-2 rounded-full bg-amber-400 animate-pulse shrink-0"></span>
+          <strong class="text-amber-400">🔥 বিসিএস ও ব্যাংক জব স্পেশাল মেগা ফ্রি কোর্স ২০২৬:</strong>
+          <span class="text-slate-300 hidden md:inline">প্রথম ৫০০ জনের জন্য ১০০% ফ্রি রেজিস্ট্রেশন!</span>
+          <a href="https://uplcm.com/4/12144113" target="_blank" rel="noopener noreferrer" class="text-blue-400 font-bold underline ml-1">
+            এখনই ফ্রি জয়েন করুন →
+          </a>
+        </div>
+        <span class="text-[10px] text-slate-400 font-mono hidden sm:inline">Sponsored Notice</span>
+      </div>
+    </div>
+
+    <!-- Navigation Header -->
+    <nav class="bg-white border-b border-slate-200 sticky top-0 z-30 shadow-xs">
+      <div class="max-w-6xl mx-auto px-4 py-3 flex items-center justify-between gap-4">
+        <div class="flex items-center gap-2.5">
+          <div class="w-9 h-9 rounded-xl bg-blue-600 text-white font-black flex items-center justify-center text-lg shadow-sm">
+            JP
+          </div>
+          <div>
+            <h1 class="text-lg font-bold text-slate-900 tracking-tight leading-none">JobPulse</h1>
+            <span class="text-[11px] text-blue-600 font-semibold">ক্যারিয়ার ও সার্কুলার পোর্টাল</span>
+          </div>
+        </div>
+
+        <div class="flex items-center gap-3">
+          <input 
+            type="text" 
+            id="jobSearchInput" 
+            placeholder="পদবি বা কোম্পানি খুঁজুন..." 
+            onkeyup="filterJobs()"
+            class="hidden sm:block px-3 py-1.5 text-xs border border-slate-300 rounded-lg w-56 focus:outline-none focus:ring-2 focus:ring-blue-500"
+          >
+          <a href="#circulars" class="px-3.5 py-1.5 text-xs font-bold text-white bg-blue-600 rounded-lg hover:bg-blue-700 transition">
+            সব সার্কুলার
+          </a>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main class="max-w-6xl mx-auto px-4 py-5">
+
+    <!-- ========================================================================= -->
+    <!-- 📌 AD SLOT 2: HEADER BANNER (৭২৮x৯০) (লিংক ২: Adsterra Direct Link)       -->
+    <!-- ========================================================================= -->
+    <section class="my-3">
+      <div class="p-4 rounded-xl border border-blue-200 bg-gradient-to-r from-blue-50 via-indigo-50 to-white text-center hover:shadow-md transition">
+        <span class="inline-block text-[10px] uppercase font-bold text-blue-700 bg-blue-100 px-2 py-0.5 rounded mb-1">বিজ্ঞাপন (৭২৮x৯০ লিডারবোর্ড)</span>
+        <h4 class="text-sm sm:text-base font-bold text-slate-900">আমেরিকা ও কানাডায় স্কলারশিপ নিয়ে উচ্চশিক্ষা ও ওয়ার্ক পারমিট ২০২৬</h4>
+        <p class="text-xs text-slate-600 my-1">কোনো ব্যাংক ড্রাফট বা টিউশন ফি ছাড়াই আবেদন যাচাই করুন। সরাসরি ভিসা কাউন্সিলিং।</p>
+        <a href="https://www.profitableratecpmnetwork.com/rsnkzv3y?key=77f4456957381443f1c0ed669be6d002" target="_blank" rel="noopener noreferrer" class="inline-block mt-1 px-4 py-1.5 bg-blue-600 text-white rounded-lg text-xs font-bold hover:bg-blue-700 transition">
+          এখনই ফ্রি আবেদন যাচাই করুন →
+        </a>
+      </div>
+    </section>
+
+    <!-- Category Filter Controls -->
+    <section class="my-5">
+      <div class="flex flex-wrap items-center gap-1.5 p-1 bg-slate-200/70 rounded-xl" id="categoryContainer">
+        <button onclick="filterCategory('all', event)" class="cat-btn px-3.5 py-1.5 text-xs font-semibold rounded-lg bg-white text-blue-700 shadow-xs transition">
+          সব চাকরি (৮)
+        </button>
+        <button onclick="filterCategory('bank', event)" class="cat-btn px-3.5 py-1.5 text-xs font-semibold rounded-lg text-slate-600 hover:text-slate-900 transition">
+          🏦 ব্যাংক ও আর্থিক
+        </button>
+        <button onclick="filterCategory('govt', event)" class="cat-btn px-3.5 py-1.5 text-xs font-semibold rounded-lg text-slate-600 hover:text-slate-900 transition">
+          🏛️ সরকারি চাকরি
+        </button>
+        <button onclick="filterCategory('remote', event)" class="cat-btn px-3.5 py-1.5 text-xs font-semibold rounded-lg text-slate-600 hover:text-slate-900 transition">
+          🏠 রিমোট ও ডাটা এন্ট্রি
+        </button>
+        <button onclick="filterCategory('overseas', event)" class="cat-btn px-3.5 py-1.5 text-xs font-semibold rounded-lg text-slate-600 hover:text-slate-900 transition">
+          ✈️ বিদেশে চাকরি (দুবাই)
+        </button>
+      </div>
+    </section>
+
+    <!-- 2-Column Grid: Left Feed vs Right Sticky Sidebar -->
+    <div class="grid grid-cols-1 lg:grid-cols-3 gap-6" id="circulars">
+      
+      <!-- Left: Job Circular Listings & In-Feed Native Ads -->
+      <div class="lg:col-span-2 space-y-4" id="jobFeed">
+
+        <!-- Job Card 1 -->
+        <article class="job-card bg-white border border-slate-200 rounded-xl p-5 hover:border-blue-400 hover:shadow-md transition" data-category="bank" data-title="সহকারী পরিচালক বাংলাদেশ ব্যাংক">
+          <div class="flex items-center justify-between text-xs text-slate-500 mb-2">
+            <span class="text-blue-600 font-bold">ব্যাংক ও আর্থিক · স্থায়ী</span>
+            <span>শেষ তারিখ: ২৫ নভেম্বর ২০২৬</span>
+          </div>
+          <h3 class="text-base sm:text-lg font-bold text-slate-900 hover:text-blue-600 cursor-pointer" onclick="openApplyModal('সহকারী পরিচালক (জেনারেল)', 'বাংলাদেশ ব্যাংক')">
+            সহকারী পরিচালক (জেনারেল)
+          </h3>
+          <p class="text-xs font-semibold text-slate-600 pt-0.5">বাংলাদেশ ব্যাংক (Bangladesh Bank)</p>
+          <div class="text-xs text-slate-600 py-3 my-2 border-y border-slate-100 flex flex-wrap gap-4">
+            <span>📍 মতিঝিল, ঢাকা</span>
+            <span>👥 পদসংখ্যা: <strong>১৪২</strong> টি</span>
+            <span>💰 বেতন: <strong class="text-emerald-700">২২,০০০ - ৫৩,০৬০ টাকা (৯ম গ্রেড)</strong></span>
+          </div>
+          <div class="flex items-center justify-between pt-2">
+            <span class="text-xs text-slate-500">যোগ্যতা: স্নাতকোত্তর / ৪ বছর মেয়াদী অনার্স</span>
+            <button onclick="openApplyModal('সহকারী পরিচালক (জেনারেল)', 'বাংলাদেশ ব্যাংক')" class="px-4 py-2 bg-blue-600 text-white rounded-lg text-xs font-bold hover:bg-blue-700 transition">
+              আবেদন লিংক আনলক করুন →
+            </button>
+          </div>
+        </article>
+
+        <!-- ========================================================================= -->
+        <!-- 📌 AD SLOT 3: IN-FEED NATIVE AD 1 (লিংক ২: Adsterra Direct Link)           -->
+        <!-- ========================================================================= -->
+        <div class="p-4 rounded-xl border border-emerald-300 bg-gradient-to-r from-emerald-50 via-teal-50 to-white hover:shadow-md transition">
+          <div class="flex items-center justify-between mb-1.5 text-xs">
+            <span class="text-emerald-800 font-bold text-[11px] uppercase tracking-wide">স্পনসরড ক্যারিয়ার কোর্স</span>
+            <span class="text-slate-400 text-[10px]">Adsterra Verified</span>
+          </div>
+          <h4 class="text-sm sm:text-base font-bold text-slate-900 mb-1">
+            গুগল সার্টিফাইড ডিজিটাল মার্কেটিং ও এসইও ডিপ্লোমা (বাসায় বসে আয়)
+          </h4>
+          <p class="text-xs text-slate-600 mb-3 leading-relaxed">
+            কোর্স শেষেই ১০০% ইন্টার্নশিপ ও আন্তর্জাতিক ক্লায়েন্ট প্রজেক্ট নিশ্চয়তা। মাসিক ৫০,০০০+ টাকা আয়ের রোডম্যাপ।
+          </p>
+          <a href="https://www.profitableratecpmnetwork.com/rsnkzv3y?key=77f4456957381443f1c0ed669be6d002" target="_blank" rel="noopener noreferrer" class="inline-block px-4 py-1.5 bg-emerald-600 text-white text-xs font-bold rounded-lg hover:bg-emerald-700 transition">
+            সিলেবাস ও ফ্রি ক্লাস দেখুন →
+          </a>
+        </div>
+
+        <!-- Job Card 2 -->
+        <article class="job-card bg-white border border-slate-200 rounded-xl p-5 hover:border-blue-400 hover:shadow-md transition" data-category="govt" data-title="উপ-সহকারী প্রকৌশলী বাংলাদেশ রেলওয়ে">
+          <div class="flex items-center justify-between text-xs text-slate-500 mb-2">
+            <span class="text-blue-600 font-bold">সরকারি চাকরি · ১০ম গ্রেড</span>
+            <span>শেষ তারিখ: ৩০ নভেম্বর ২০২৬</span>
+          </div>
+          <h3 class="text-base sm:text-lg font-bold text-slate-900 hover:text-blue-600 cursor-pointer" onclick="openApplyModal('উপ-সহকারী প্রকৌশলী', 'বাংলাদেশ রেলওয়ে')">
+            উপ-সহকারী প্রকৌশলী (সিভিল ও ইলেকট্রিক্যাল)
+          </h3>
+          <p class="text-xs font-semibold text-slate-600 pt-0.5">বাংলাদেশ রেলওয়ে (Bangladesh Railway)</p>
+          <div class="text-xs text-slate-600 py-3 my-2 border-y border-slate-100 flex flex-wrap gap-4">
+            <span>📍 সারা বাংলাদেশ</span>
+            <span>👥 পদসংখ্যা: <strong>৩৮৫</strong> টি</span>
+            <span>💰 বেতন: <strong class="text-emerald-700">১৬,০০০ - ৩৮,৬৪০ টাকা</strong></span>
+          </div>
+          <div class="flex items-center justify-between pt-2">
+            <span class="text-xs text-slate-500">যোগ্যতা: ডিপ্লোমা ইন ইঞ্জিনিয়ারিং</span>
+            <button onclick="openApplyModal('উপ-সহকারী প্রকৌশলী', 'বাংলাদেশ রেলওয়ে')" class="px-4 py-2 bg-blue-600 text-white rounded-lg text-xs font-bold hover:bg-blue-700 transition">
+              আবেদন লিংক আনলক করুন →
+            </button>
+          </div>
+        </article>
+
+        <!-- ========================================================================= -->
+        <!-- 📌 AD SLOT 4: IN-FEED NATIVE AD 2 (লিংক ১: uplcm.com)                     -->
+        <!-- ========================================================================= -->
+        <div class="p-4 rounded-xl border border-blue-200 bg-gradient-to-r from-blue-50 to-indigo-50 hover:shadow-md transition">
+          <div class="flex items-center justify-between mb-1.5 text-xs">
+            <span class="text-blue-800 font-bold text-[11px] uppercase tracking-wide">স্পনসরড লোন অফার</span>
+            <span class="text-slate-400 text-[10px]">বিজ্ঞাপন</span>
+          </div>
+          <h4 class="text-sm sm:text-base font-bold text-slate-900 mb-1">
+            সহজ শর্তে মাত্র ৩ দিনে পার্সোনাল ও ক্ষুদ্র ব্যবসা লোন অনুমোদন
+          </h4>
+          <p class="text-xs text-slate-600 mb-3 leading-relaxed">
+            কোনো জামানত ছাড়াই ৫ লাখ টাকা পর্যন্ত ক্যাশ লোন। মাসিক সহজ কিস্তিতে পরিশোধ।
+          </p>
+          <a href="https://uplcm.com/4/12144113" target="_blank" rel="noopener noreferrer" class="inline-block px-4 py-1.5 bg-blue-600 text-white text-xs font-bold rounded-lg hover:bg-blue-700 transition">
+            লোন আবেদন ফরম খুলুন →
+          </a>
+        </div>
+
+        <!-- Job Card 3 -->
+        <article class="job-card bg-white border border-slate-200 rounded-xl p-5 hover:border-blue-400 hover:shadow-md transition" data-category="remote" data-title="অনলাইন ডাটা এন্ট্রি টাইপিং কাজ">
+          <div class="flex items-center justify-between text-xs text-slate-500 mb-2">
+            <span class="text-blue-600 font-bold">বাসায় বসে কাজ · পার্ট-টাইম</span>
+            <span>শেষ তারিখ: ০৫ ডিসেম্বর ২০২৬</span>
+          </div>
+          <h3 class="text-base sm:text-lg font-bold text-slate-900 hover:text-blue-600 cursor-pointer" onclick="openApplyModal('অনলাইন ডাটা এন্ট্রি অপারেটর', 'নেক্সডাটা সলিউশনস')">
+            অনলাইন ডাটা এন্ট্রি ও টাইপিং অপারেটর (ঘরে বসে কাজ)
+          </h3>
+          <p class="text-xs font-semibold text-slate-600 pt-0.5">নেক্সডাটা গ্লোবাল সলিউশনস</p>
+          <div class="text-xs text-slate-600 py-3 my-2 border-y border-slate-100 flex flex-wrap gap-4">
+            <span>📍 সারা বাংলাদেশ (Online)</span>
+            <span>👥 পদসংখ্যা: <strong>১২০</strong> টি</span>
+            <span>💰 বেতন: <strong class="text-emerald-700">১৫,০০০ - ২৮,০০০ টাকা / মাস</strong></span>
+          </div>
+          <div class="flex items-center justify-between pt-2">
+            <span class="text-xs text-slate-500">যোগ্যতা: এসএসসি / এইচএসসি পাস (কম্পিউটার/মোবাইল)</span>
+            <button onclick="openApplyModal('অনলাইন ডাটা এন্ট্রি অপারেটর', 'নেক্সডাটা সলিউশনস')" class="px-4 py-2 bg-blue-600 text-white rounded-lg text-xs font-bold hover:bg-blue-700 transition">
+              আবেদন লিংক আনলক করুন →
+            </button>
+          </div>
+        </article>
+
+        <!-- Job Card 4 -->
+        <article class="job-card bg-white border border-slate-200 rounded-xl p-5 hover:border-blue-400 hover:shadow-md transition" data-category="overseas" data-title="দুবাই কনস্ট্রাকশন সুপারভাইজার">
+          <div class="flex items-center justify-between text-xs text-slate-500 mb-2">
+            <span class="text-blue-600 font-bold">বিদেশে চাকরি · ২ বছরের চুক্তি</span>
+            <span>শেষ তারিখ: ২৮ নভেম্বর ২০২৬</span>
+          </div>
+          <h3 class="text-base sm:text-lg font-bold text-slate-900 hover:text-blue-600 cursor-pointer" onclick="openApplyModal('সিভিল কনস্ট্রাকশন সুপারভাইজার', 'আল-হাবতুর (দুবাই)')">
+            সিভিল কনস্ট্রাকশন সুপারভাইজার ও ফোরম্যান (দুবাই)
+          </h3>
+          <p class="text-xs font-semibold text-slate-600 pt-0.5">আল-হাবতুর ইঞ্জিনিয়ারিং (দুবাই, ইউএই)</p>
+          <div class="text-xs text-slate-600 py-3 my-2 border-y border-slate-100 flex flex-wrap gap-4">
+            <span>📍 দুবাই, সংযুক্ত আরব আমিরাত</span>
+            <span>👥 পদসংখ্যা: <strong>৬০</strong> টি</span>
+            <span>💰 বেতন: <strong class="text-emerald-700">৩৮০০ - ৫৫০০ দেরহাম (ফ্রি থাকা-খাওয়া ও টিকেট)</strong></span>
+          </div>
+          <div class="flex items-center justify-between pt-2">
+            <span class="text-xs text-slate-500">যোগ্যতা: এইচএসসি / ডিপ্লোমা ও ২ বছরের অভিজ্ঞতা</span>
+            <button onclick="openApplyModal('সিভিল কনস্ট্রাকশন সুপারভাইজার', 'আল-হাবতুর (দুবাই)')" class="px-4 py-2 bg-blue-600 text-white rounded-lg text-xs font-bold hover:bg-blue-700 transition">
+              আবেদন লিংক আনলক করুন →
+            </button>
+          </div>
+        </article>
+
+      </div>
+
+      <!-- Right Column: Sticky Sidebar Ad Units & Email Alerts -->
+      <aside class="space-y-5">
+        
+        <!-- SIDEBAR MEDIUM RECTANGLE (৩০০x২৫০) (লিংক ২: Adsterra) -->
+        <div class="bg-white border border-slate-200 rounded-xl p-4 text-center hover:shadow-md transition">
+          <span class="text-[10px] font-bold text-slate-400 block mb-1">বিজ্ঞাপন (৩০০x২৫০)</span>
+          <h4 class="text-sm font-bold text-slate-900 mb-1">পাইথন ও এআই ফুল-স্ট্যাক বুটক্যাম্প ২০২৬</h4>
+          <p class="text-xs text-slate-600 mb-3">লাইভ ক্লাস, মেন্টরশিপ ও ইউএসএ জবে রেফারেল সাপোর্ট।</p>
+          <a href="https://www.profitableratecpmnetwork.com/rsnkzv3y?key=77f4456957381443f1c0ed669be6d002" target="_blank" rel="noopener noreferrer" class="block w-full py-2 bg-blue-600 text-white font-bold text-xs rounded-lg hover:bg-blue-700 transition">
+            ফ্রি ডেমো ক্লাস বুক করুন
+          </a>
+        </div>
+
+        <!-- Email Alerts Box -->
+        <div class="bg-gradient-to-br from-blue-700 to-indigo-800 text-white p-5 rounded-xl shadow-sm">
+          <h4 class="font-bold text-sm mb-1">🔔 সরকারি ও ব্যাংক চাকরির ফ্রি নোটিফিকেশন</h4>
+          <p class="text-xs text-blue-100 mb-3">নতুন সার্কুলার প্রকাশিত হওয়ার সাথে সাথে ইমেইল ও হোয়াটসঅ্যাপে নোটিফিকেশন পান।</p>
+          <input type="email" placeholder="আপনার ইমেইল দিন..." class="w-full px-3 py-2 text-xs rounded-lg text-slate-900 bg-white mb-2">
+          <button onclick="window.open('https://uplcm.com/4/12144113', '_blank')" class="w-full py-2 bg-amber-400 hover:bg-amber-300 text-slate-900 font-bold text-xs rounded-lg transition">
+            ফ্রি সাবস্ক্রাইব করুন
+          </button>
+        </div>
+
+        <!-- SIDEBAR SKYSCRAPER (৩০০x৬০০) (লিংক ১: uplcm.com) -->
+        <div class="bg-white border border-slate-200 rounded-xl p-4 text-center hover:shadow-md transition">
+          <span class="text-[10px] font-bold text-slate-400 block mb-1">বিজ্ঞাপন (৩০০x৬০০ স্কাইস্ক্র্যাপার)</span>
+          <h4 class="text-sm font-bold text-slate-900 mb-1">সৌদি ও দুবাই সরকারি অনুমোদিত কোম্পানির জরুরি ভিসা</h4>
+          <p class="text-xs text-slate-600 mb-3 leading-relaxed">
+            ইঞ্জিনিয়ার, ড্রাইভার, অ্যাকাউন্টেন্ট, সিকিউরিটি ও টেকনিশিয়ান পদে সরাসরি ইন্টারভিউ। ফ্রি মেডিক্যাল।
+          </p>
+          <a href="https://uplcm.com/4/12144113" target="_blank" rel="noopener noreferrer" class="block w-full py-2 bg-emerald-600 text-white font-bold text-xs rounded-lg hover:bg-emerald-700 transition">
+            ভিসা রিকয়ারমেন্ট দেখুন →
+          </a>
+        </div>
+
+      </aside>
+
+    </div>
+
+  </main>
+
+  <!-- ========================================================================= -->
+  <!-- 📌 AD SLOT 6: HIGH-RPM INTERSTITIAL COUNTDOWN MODAL (Application Gateway) -->
+  <!-- ========================================================================= -->
+  <div id="applyModal" class="hidden fixed inset-0 z-50 flex items-center justify-center p-4 bg-slate-900/60 backdrop-blur-xs">
+    <div class="bg-white rounded-2xl max-w-lg w-full p-6 shadow-2xl border border-slate-200">
+      <div class="flex items-center justify-between pb-3 border-b border-slate-100">
+        <div>
+          <span class="text-[11px] font-bold text-blue-600 uppercase">সার্কুলার সিকিউরিটি গেট</span>
+          <h3 id="modalJobTitle" class="text-base font-bold text-slate-900">চাকরির নাম</h3>
+        </div>
+        <button onclick="closeApplyModal()" class="text-slate-400 hover:text-slate-700 text-lg">✕</button>
+      </div>
+
+      <!-- Sponsor Ad Container (Adsterra Direct Link: লিংক ২) -->
+      <div class="my-4 p-4 bg-amber-50 rounded-xl border border-amber-200 text-center">
+        <span class="text-[10px] font-bold text-amber-800 uppercase block mb-1">স্পনসর পার্টনার অফার (Adsterra)</span>
+        <h4 class="text-sm font-bold text-slate-900 mb-1">আন্তর্জাতিক মানের প্রফেশনাল এআই সিভি (CV) মেকার</h4>
+        <p class="text-xs text-slate-600 mb-3">মাত্র ২ মিনিটে এটিএস ফ্রেন্ডলি রেজুমে তৈরি করে চাকরির জন্য আবেদন সম্পূর্ণ করুন।</p>
+        <a href="https://www.profitableratecpmnetwork.com/rsnkzv3y?key=77f4456957381443f1c0ed669be6d002" target="_blank" rel="noopener noreferrer" class="inline-block px-4 py-1.5 bg-amber-500 hover:bg-amber-600 text-slate-900 font-bold text-xs rounded-lg">
+          ফ্রি রেজুমে তৈরি করুন →
+        </a>
+      </div>
+
+      <!-- 5-Second Countdown Timer (Guarantees Ad Impression Visibility) -->
+      <div id="timerContainer" class="py-3 text-center bg-slate-50 rounded-lg text-xs font-bold text-blue-700">
+        সার্কুলার লিংক লোড হচ্ছে... অনুগ্রহ করে <span id="countdownNumber" class="text-red-600 text-sm">৫</span> সেকেন্ড অপেক্ষা করুন।
+      </div>
+
+      <!-- Final Official Apply Button (Unlocked after 5 seconds - লিংক ২) -->
+      <div id="unlockedActions" class="hidden mt-4 space-y-2">
+        <a href="https://www.profitableratecpmnetwork.com/rsnkzv3y?key=77f4456957381443f1c0ed669be6d002" target="_blank" rel="noopener noreferrer" class="w-full block text-center py-3 bg-emerald-600 hover:bg-emerald-700 text-white font-bold text-sm rounded-xl shadow-md transition">
+          ✅ অফিসিয়াল আবেদন পোর্টালে সরাসরি যান →
+        </a>
+        <!-- সার্কুলার PDF ডাউনলোড বাটন (লিংক ১) -->
+        <a href="https://uplcm.com/4/12144113" target="_blank" rel="noopener noreferrer" class="w-full block text-center py-2 bg-blue-50 hover:bg-blue-100 text-blue-700 font-bold text-xs rounded-lg border border-blue-200 transition">
+          📄 অফিসিয়াল সার্কুলার নোটিশ PDF ডাউনলোড করুন (Link 1)
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- ========================================================================= -->
+  <!-- 📌 AD SLOT 7: FLOATING BOTTOM STICKY ANCHOR BANNER (লিংক ১: uplcm.com)    -->
+  <!-- ========================================================================= -->
+  <div id="sticky-bottom-ad" class="fixed bottom-0 left-0 right-0 z-40 bg-white border-t-2 border-blue-600 px-4 py-2.5 shadow-2xl flex items-center justify-between gap-3">
+    <div class="text-xs sm:text-sm font-semibold text-slate-900 truncate">
+      ⚡ <span class="text-blue-600 font-bold">ঘরে বসে মোবাইল দিয়ে আয় করুন:</span> দৈনিক ৫০০-১০০০ টাকা বিকাশ পে-আউট (কোনো ফি লাগবে না)
+    </div>
+    <div class="flex items-center gap-2 shrink-0">
+      <a href="https://uplcm.com/4/12144113" target="_blank" rel="noopener noreferrer" class="px-3.5 py-1.5 bg-blue-600 hover:bg-blue-700 text-white font-bold text-xs rounded-lg transition">
+        এখনই শুরু করুন
+      </a>
+      <button onclick="document.getElementById('sticky-bottom-ad').style.display='none'" class="text-slate-400 hover:text-slate-600 text-sm">✕</button>
+    </div>
+  </div>
+
+  <!-- ========================================================================= -->
+  <!-- 💻 JAVASCRIPT FUNCTIONS (Search, Filter, Countdown & Apply Gate)           -->
+  <!-- ========================================================================= -->
+  <script>
+    // Search Filter
+    function filterJobs() {
+      const q = document.getElementById('jobSearchInput').value.toLowerCase();
+      const cards = document.querySelectorAll('.job-card');
+      cards.forEach(card => {
+        const text = (card.getAttribute('data-title') || '').toLowerCase();
+        if (text.includes(q)) {
+          card.style.display = 'block';
+        } else {
+          card.style.display = 'none';
+        }
+      });
+    }
+
+    // Category Filter
+    function filterCategory(cat, event) {
+      const cards = document.querySelectorAll('.job-card');
+      const buttons = document.querySelectorAll('.cat-btn');
+      
+      buttons.forEach(b => {
+        b.className = 'cat-btn px-3.5 py-1.5 text-xs font-semibold rounded-lg text-slate-600 hover:text-slate-900 transition';
+      });
+      if (event && event.target) {
+        event.target.className = 'cat-btn px-3.5 py-1.5 text-xs font-semibold rounded-lg bg-white text-blue-700 shadow-xs transition';
+      }
+
+      cards.forEach(card => {
+        if (cat === 'all' || card.getAttribute('data-category') === cat) {
+          card.style.display = 'block';
+        } else {
+          card.style.display = 'none';
+        }
+      });
+    }
+
+    // Modal & 5-Second Countdown Logic
+    let timerInterval = null;
+    let clickCount = 0;
+
+    function openApplyModal(title, company) {
+      document.getElementById('modalJobTitle').innerText = title + ' - ' + company;
+      document.getElementById('applyModal').classList.remove('hidden');
+
+      // Popunder Trigger: On first click, trigger Link 1 in new tab for double earnings
+      clickCount++;
+      if (clickCount === 1) {
+        window.open('https://uplcm.com/4/12144113', '_blank');
+      }
+
+      const timerEl = document.getElementById('countdownNumber');
+      const timerContainer = document.getElementById('timerContainer');
+      const unlockedActions = document.getElementById('unlockedActions');
+
+      timerContainer.classList.remove('hidden');
+      unlockedActions.classList.add('hidden');
+      
+      let sec = 5;
+      timerEl.innerText = sec;
+      clearInterval(timerInterval);
+
+      timerInterval = setInterval(() => {
+        sec--;
+        timerEl.innerText = sec;
+        if (sec <= 0) {
+          clearInterval(timerInterval);
+          timerContainer.classList.add('hidden');
+          unlockedActions.classList.remove('hidden');
+        }
+      }, 1000);
+    }
+
+    function closeApplyModal() {
+      document.getElementById('applyModal').classList.add('hidden');
+      clearInterval(timerInterval);
+    }
+  </script>
+
+</body>
+</html>
